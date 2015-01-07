@@ -1,0 +1,63 @@
+<harpia>
+<GcState>
+	<block type="500" id="1">
+		<position x="113.0" y="177.0"/>
+	</block>
+	<block type="2" id="2">
+		<position x="330.0" y="78.0"/>
+	</block>
+	<block type="3008" id="3">
+		<position x="334.0" y="245.0"/>
+	</block>
+	<block type="2" id="4">
+		<position x="557.0" y="248.0"/>
+	</block>
+</GcState>
+<properties>
+  <block id="1" type="500">
+		<property desc="file name" name="_PARAM1_" type="filename" value="/Shared/TP_VTDVR/resources/video.avi" />
+	</block>
+  <block id="2" type="2">
+		<property desc="window name" name="_PARAM1_" value="block_BLOCKID_" />
+	</block>
+  <block id="3" type="3008">
+		<property desc="conversion code" name="_CONVERSION_" type="selector" value="CV_BGR2GRAY" values="CV_BGR2GRAY;CV_GRAY2BGR;CV_BGR2RGB;CV_RGB2BGR;CV_BGR2XYZ;CV_RGB2XYZ;CV_XYZ2BGR;CV_XYZ2RGB;CV_BGR2YCrCb;CV_RGB2YCrCb;CV_YCrCb2BGR;CV_YCrCb2RGB;CV_BGR2HSV;CV_RGB2HSV;CV_HSV2BGR;CV_HSV2RGB;CV_BGR2HLS;CV_RGB2HLS;CV_HLS2BGR;CV_HLS2RGB;CV_BGR2Lab;CV_RGB2Lab;CV_Lab2BGR;CV_Lab2RGB;CV_BGR2Luv;CV_RGB2Luv;CV_Luv2BGR;CV_Luv2RGB" />
+		<property desc="number of channels" name="_DSTCN_" value="0" />
+    </block>
+  <block id="4" type="2">
+		<property desc="window name" name="_PARAM1_" value="block_BLOCKID_" />
+	</block>
+  </properties>
+<network>
+<block type="500" id="1">
+<inputs>
+</inputs>
+<outputs>
+<output id="1" inBlock="2" input="1"/>
+<output id="1" inBlock="3" input="1"/>
+</outputs>
+</block>
+<block type="2" id="2">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+</outputs>
+</block>
+<block type="3008" id="3">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+<output id="1" inBlock="4" input="1"/>
+</outputs>
+</block>
+<block type="2" id="4">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+</outputs>
+</block>
+</network>
+</harpia>

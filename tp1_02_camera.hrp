@@ -1,0 +1,36 @@
+<harpia>
+<GcState>
+	<block type="2" id="6">
+		<position x="436.0" y="154.0"/>
+	</block>
+	<block type="1009" id="7">
+		<position x="195.0" y="151.0"/>
+	</block>
+</GcState>
+<properties>
+  <block id="7" type="1009">
+		<property desc="x resolution" name="_XRES_" value="640" />
+		<property desc="y resolution" name="_YRES_" value="480" />
+		<property desc="frame rate" name="_FRAMERATE_" value="30" />
+	</block>
+  <block id="6" type="2">
+		<property desc="window name" name="_PARAM1_" value="block_BLOCKID_" />
+	</block>
+  </properties>
+<network>
+<block type="1009" id="7">
+<inputs>
+</inputs>
+<outputs>
+<output id="1" inBlock="6" input="1"/>
+</outputs>
+</block>
+<block type="2" id="6">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+</outputs>
+</block>
+</network>
+</harpia>
